@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC School</title>
+  <meta name="description" content="Official website of ABC School.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand-mark">
+          <img src="assets/logo.jpeg" alt="School Logo" class="brand-logo" id="school-logo-img">
+          <div>
+            <h1>BrightFuture School</h1>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#notices" class="plain-link">Notices</a>
+          <a href="#activities" class="plain-link">Activities</a>
+          <a href="#gallery" class="plain-link">Gallery</a>
+          <a href="#about" class="plain-link">About Us</a>
+          <a class="top-link" href="#chatbot">FAQ Bot</a>
+        </div>
+      </nav>
+
+      <section class="hero-content scroll-fade">
+        <div class="hero-copy">
+          <p class="section-label">Learning. Leadership. Community.</p>
+          <h2>A modern school website for students, parents, and visitors.</h2>
+          <p class="hero-text">
+            Explore our official social media channels, download our school app
+            from the Play Store, and get instant answers from the FAQ chatbot.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn call-btn" href="tel:+917202857964">📞 Call for Inquiry</a>
+            <a class="secondary-btn" href="#notices">Notice Board</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <p class="panel-label">Quick Access</p>
+          <ul class="quick-list">
+            <li><a href="#social-links">Social Media Channels</a></li>
+            <li><a href="#social-links">Play Store app download</a></li>
+            <li><a href="#gallery">School highlights & gallery</a></li>
+            <li><a href="#chatbot">Interactive FAQ chatbot</a></li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="notice-section scroll-fade" id="notices">
+        <div class="section-heading">
+          <p class="section-label">Notice Board</p>
+          <h3>Latest News & Upcoming Events</h3>
+        </div>
+        <div class="notice-grid" id="dynamic-notices">
+          <p style="grid-column: 1/-1; color: var(--muted); text-align: center; padding: 20px;">Loading notices...</p>
+        </div>
+      </section>
+
+      <section class="link-section scroll-fade" id="social-links">
+        <div class="section-heading">
+          <p class="section-label">Official Links</p>
+          <h3>Connect with our school everywhere</h3>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" data-link="instagram" target="_blank" rel="noreferrer">
+            <span class="link-icon"
+              style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff;">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+              </svg>
+            </span>
+            <strong>Instagram</strong>
+            <span>Photos, events, and campus life</span>
+          </a>
+          <a class="link-card" data-link="facebook" target="_blank" rel="noreferrer">
+            <span class="link-icon" style="background: #1877F2; color: #fff;">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </span>
+            <strong>Facebook</strong>
+            <span>Announcements and parent updates</span>
+          </a>
+          <a class="link-card" data-link="youtube" target="_blank" rel="noreferrer">
+            <span class="link-icon" style="background: #FF0000; color: #fff;">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </span>
+            <strong>YouTube</strong>
+            <span>School videos and activity coverage</span>
+          </a>
+          <a class="link-card" data-link="whatsapp" target="_blank" rel="noreferrer">
+            <span class="link-icon" style="background: #25D366; color: #fff;">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </span>
+            <strong>WhatsApp</strong>
+            <span>Quick communication and support</span>
+          </a>
+          <a class="link-card spotlight" data-link="playstore" target="_blank" rel="noreferrer">
+            <span class="link-icon"
+              style="background: rgba(255, 255, 255, 0.4); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+              <svg viewBox="0 0 24 24" width="28" height="28">
+                <path fill="#41A3E6"
+                  d="M1.385 1c-.61.5-.979 1.378-.979 2.535v16.924c0 1.162.368 2.038.98 2.535l.061.054 9.544-9.544v-.999L1.444 2.952c-.018.016-.042.034-.059.048z" />
+                <path fill="#FFD04F"
+                  d="M14.92 13.918l-3.235-3.235v-.86l3.242-3.242.067.04 4.093 2.33c1.166.666 1.166 1.764 0 2.433l-4.103 2.336-.064.198z" />
+                <path fill="#5ED471"
+                  d="M11 11.139l-9.155-9.155C2.193 1.83 2.639 1.745 3.195 2.062L11 6.5l.004 4.639h-.004z" />
+                <path fill="#FF5353"
+                  d="M11 12.871v4.634l.004-.002-7.81 4.437c-.556.315-1.002.23-1.348-.078L11 12.87z" />
+              </svg>
+            </span>
+            <strong>Play Store App</strong>
+            <span>Download our Android app</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="about-section scroll-fade" id="about">
+        <div class="section-heading">
+          <p class="section-label">About Us</p>
+          <h3>Everything parents need in one place</h3>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h4>Why choose us</h4>
+            <p>
+              Our school focuses on academic excellence, co-curricular growth,
+              and a safe, supportive environment for every student.
+            </p>
+          </article>
+          <article class="about-card">
+            <h4>Campus Highlights</h4>
+            <p>
+              Smart classrooms, dedicated faculty, sports activities, cultural
+              programs, and a strong parent-school connection.
+            </p>
+          </article>
+          <article class="about-card">
+            <h4>Stay Updated</h4>
+            <p>
+              Follow our social media pages and use the mobile app for school
+              notices, event updates, and important announcements.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="activities-section scroll-fade" id="activities">
+        <div class="section-heading">
+          <p class="section-label">Extracurriculars</p>
+          <h3>Develop skills beyond the classroom</h3>
+        </div>
+
+        <div class="activities-grid">
+          <div class="activity-card" style="--card-bg: rgba(255, 99, 71, 0.08); --icon-bg: rgba(255, 99, 71, 0.15)">
+            <div class="activity-image">
+              <!-- Add multiple photos here for an automatic slideshow -->
+              <img src="assets/k1.jpeg" alt="Karate" loading="lazy">
+              <img src="assets/k2.jpeg" alt="Karate" loading="lazy">
+              <img src="assets/k3.jpeg" alt="Karate" loading="lazy">
+              <img src="assets/k4.jpeg" alt="Karate" loading="lazy">
+              <img src="assets/k5.jpeg" alt="Karate" loading="lazy">
+              <div class="activity-icon">🥋</div>
+            </div>
+            <div class="activity-info">
+              <h4>Karate</h4>
+              <p>Self-defense and discipline training to build physical and mental strength.</p>
+            </div>
+          </div>
+          <div class="activity-card" style="--card-bg: rgba(30, 144, 255, 0.08); --icon-bg: rgba(30, 144, 255, 0.15)">
+            <div class="activity-image">
+              <!-- Add multiple photos here for an automatic slideshow -->
+              <img src="assets/s0.jpeg" alt="Skating" loading="lazy">
+              <img src="assets/s1.jpeg" alt="Skating" loading="lazy">
+              <img src="assets/s2.jpeg" alt="Skating" loading="lazy">
+              <img src="assets/s3.jpeg" alt="Skating" loading="lazy">
+              <div class="activity-icon">🛼</div>
+            </div>
+            <div class="activity-info">
+              <h4>Skating</h4>
+              <p>Professional roller skating coaching on our dedicated campus rink.</p>
+            </div>
+          </div>
+          <div class="activity-card" style="--card-bg: rgba(46, 204, 113, 0.08); --icon-bg: rgba(46, 204, 113, 0.15)">
+            <div class="activity-image">
+              <!-- Add multiple photos here for an automatic slideshow -->
+              <img src="assets/t1.jpeg" alt="Tuitions" loading="lazy">
+              <img src="assets/t2.jpeg" alt="Tuitions" loading="lazy">
+              <img src="assets/t3.jpeg" alt="Tuitions" loading="lazy">
+              <div class="activity-icon">📚</div>
+            </div>
+            <div class="activity-info">
+              <h4>Tuitions</h4>
+              <p>After-school academic support and coaching to ensure excellence.</p>
+            </div>
+          </div>
+          <div class="activity-card" style="--card-bg: rgba(155, 89, 182, 0.08); --icon-bg: rgba(155, 89, 182, 0.15)">
+            <div class="activity-image">
+              <!-- Add multiple photos here for an automatic slideshow -->
+              <img src="assets/b1.jpeg" alt="Bharatnatyam" loading="lazy">
+              <img src="assets/b2.jpeg" alt="Bharatnatyam" loading="lazy">
+              <img src="assets/b3.jpeg" alt="Bharatnatyam" loading="lazy">
+              <img src="assets/b4.jpeg" alt="Bharatnatyam" loading="lazy">
+              <img src="assets/b5.jpeg" alt="Bharatnatyam" loading="lazy">
+              <div class="activity-icon">🪔</div>
+            </div>
+            <div class="activity-info">
+              <h4>Bharatnatyam</h4>
+              <p>Traditional Indian classical dance sessions by experienced gurus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section scroll-fade" id="gallery">
+        <div class="section-heading">
+          <p class="section-label">Campus Life</p>
+          <h3>Discover our vibrant school environment</h3>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <!-- Add multiple images here for an automatic slideshow -->
+            <img src="assets/c1.jpeg" alt="Students in a modern, high-tech classroom" loading="lazy">
+            <img src="assets/c2.jpeg" alt="More classroom photos" loading="lazy">
+            <img src="assets/c3.jpeg" alt="More classroom photos" loading="lazy">
+            <img src="assets/c4.jpeg" alt="More classroom photos" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Academics</span>
+              <h4>Modern Classrooms</h4>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/a1.jpeg" alt="Students playing basketball on a sunny outdoor court" loading="lazy">
+            <img src="assets/a2.jpeg" alt="More activity photos" loading="lazy">
+            <img src="assets/a3.jpeg" alt="More activity photos" loading="lazy">
+            <img src="assets/a4.jpeg" alt="More activity photos" loading="lazy">
+            <img src="assets/a5.jpeg" alt="More activity photos" loading="lazy">
+            <img src="assets/a6.jpeg" alt="More activity photos" loading="lazy">
+            <img scr="assets/a7.jpeg" alt="More activity photos" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Sports</span>
+              <h4>Outdoor Activities</h4>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <section class="chatbot-section scroll-fade" id="chatbot">
+    <div class="section-heading">
+      <p class="section-label">FAQ Chatbot</p>
+      <h3>Ask common school questions instantly</h3>
+    </div>
+
+    <div class="chatbot-layout">
+      <div class="chatbot-panel">
+        <div class="bot-header">
+          <div>
+            <strong>School FAQ Assistant</strong>
+            <p>Answers admission, fee, timing, app, and contact questions</p>
+          </div>
+        </div>
+
+        <div class="chat-window" id="chat-window" aria-live="polite"></div>
+
+        <div class="suggestion-row" id="suggestion-row">
+          <button type="button" class="chip">Admission process</button>
+          <button type="button" class="chip">School timing</button>
+          <button type="button" class="chip">How to download app</button>
+        </div>
+
+        <form class="chat-form" id="chat-form">
+          <label class="sr-only" for="chat-input">Ask a question</label>
+          <input id="chat-input" name="chat-input" type="text" placeholder="Type your question here..."
+            autocomplete="off">
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <aside class="faq-panel">
+        <h4>Popular Questions</h4>
+        <ul id="faq-list" class="faq-list"></ul>
+      </aside>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer scroll-fade">
+    <div class="footer-info">
+      <p class="section-label">Contact</p>
+      <h3 id="footer-school-name">BrightFuture School</h3>
+      <div class="footer-details">
+        <p>📍&nbsp;&nbsp;<span id="school-address">12 Knowledge Road, Learning City</span></p>
+        <p>📞&nbsp;&nbsp;<span id="school-phone">+91 98765 43210</span></p>
+        <p>✉️&nbsp;&nbsp;<span id="school-email">info@brightfuture.edu</span></p>
+      </div>
+    </div>
+
+    <div class="footer-map">
+      <iframe src="https://maps.google.com/maps?q=ABC+School-Anand,+Anand,+Gujarat&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
+
+    <div class="footer-form-wrapper">
+      <h4>Get in Touch</h4>
+      <form class="contact-form" action="https://formsubmit.co/abc2014anand@gmail.com" method="POST">
+        <!-- FormSubmit Hidden Configuration -->
+        <input type="hidden" name="_subject" value="New Website Inquiry!">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" placeholder="Your Message" rows="3" required></textarea>
+        <button class="primary-btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </footer>
+  </div>
+  <a href="tel:+917202857964" class="floating-call-btn" aria-label="Call Now">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
